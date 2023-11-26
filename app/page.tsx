@@ -1,4 +1,9 @@
-/** Add your relevant code here for the issue to reproduce */
+import { headers } from "next/headers";
+
+
 export default function Home() {
+  const headerList = headers();
+  console.log("Headers available in page file: ", headerList);
+
   return null
 }
